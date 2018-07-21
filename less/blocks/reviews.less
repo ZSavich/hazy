@@ -1,0 +1,60 @@
+.reviews {
+	margin-bottom: 100px;
+
+	&__header {
+		margin-bottom: 50px;
+
+		h2 {
+			font-size: 30px;
+			font-weight: 700;
+		}
+	}
+
+	&__item {
+		background-color: #eeeff3;
+		border-radius: 4px;
+
+		padding: 15px 10px;
+		margin-bottom: 25px;
+	}
+
+	&__name {
+		font-size: 16px;
+	}
+
+	&__desc {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 10px;
+	}
+
+	&__status {
+		width: 100%;
+		height: 100%;
+		
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&-done {
+			background-image: url(../../images/satisfied.svg);
+		}
+
+		&-not-done {
+			background-image: url(../../images/zoom-in.svg);
+		}
+	}
+
+	&__form {
+		margin-top: 25px;
+	}
+
+	&__form {
+		text-align: center;
+	}
+
+	&__form-title {
+		display: block;
+		margin-bottom: 10px;
+	}
+}

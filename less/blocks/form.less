@@ -1,0 +1,40 @@
+.form {
+	span {
+		font-size: 16px;
+		width: 100%;
+		text-align: center;
+
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+
+	&__pay-checkboxes {
+		input[type='checkbox'] {
+			 display: none;
+		}
+
+		.form__checked {
+			min-height: 75px;
+			position: relative;
+			cursor: pointer;
+			opacity: .5;
+		}
+
+		input[type='checkbox']:checked + .form__checked {
+			opacity: 1;
+
+			&::before {
+				content: '';
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				background-image: url(../../images/checked.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				left: 0px;
+				top: 0px;
+			}
+		}
+	}
+}

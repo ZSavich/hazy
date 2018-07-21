@@ -4,56 +4,66 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Продажа серебра Hazy System 3.1</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css" as="style">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" as="font">
+	<link rel="stylesheet" href="css/style.css" as="style">
+
 </head>
 <body>
+  <div class="loader">
+	  <div class="loader__item-1"></div>
+	  <div class="loader__item-2"></div>
+	  <div class="loader__item-3"></div>
+	  <div class="loader__item-4"></div>
+	  <div class="loader__item-5"></div>
+	</div>
 	<header class="page-header">
 		<nav class="main-navigation container">
-			<ul class="main-navigation__list row">
-				<li class="main-navigation__item col-xl-3"><a href="#" class="main-navigation__link">Как проходит сделка?</a></li>
-				<li class="main-navigation__item col-xl-2"><a href="#" class="main-navigation__link">Отзывы</a></li>
-				<li class="main-navigation__item col-xl-2"><a href="#" class="main-navigation__link">Контакты</a></li>
-				<li class="main-navigation__item col-xl-2 ml-auto"><a href="#" class="main-navigation__link btn__nav">Купить серебро</a></li>
+			<ul class="main-navigation__list row align-items-center">
+				<li class="main-navigation__item col-xl-3"><a href="#work" class="main-navigation__link">Как проходит сделка?</a></li>
+				<li class="main-navigation__item col-xl-2"><a href="#reviews" class="main-navigation__link">Отзывы</a></li>
+				<li class="main-navigation__item col-xl-2"><a href="#contacts" class="main-navigation__link">Контакты</a></li>
+				<li class="main-navigation__item col-xl-2 ml-auto"><a href="#buy" class="main-navigation__link btn--nav btn">Купить серебро</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section class="big-post">
 			<div class="container">
-					<header class="big-post__header row justify-content-center">
+					<div class="row  justify-content-center">
+					<header class="big-post__header col-xl-8">
 						<h1>Продажа серебра <span>Hazy 3.1</span></h1>
 					</header>
+					</div>
 					<div class="row flex-column align-items-center">
 						<p class="big-post__left">Осталось <span class="green-color">400 000 000 серебра</span></p>
 						<p class="big-post__course">Курс: <span class="green-color">1 руб.</span> = <span class="green-color">30 000 серебра</span></p>
-						<a href="#" class="big-post__btn btn">Купить серебро</a>
+						<a href="#buy" class="big-post__btn btn col-xl-4">Купить серебро</a>
 					</div>
 			</div>
 		</section>
-		<section class="how-it-work">
+		<section class="how-it-work" id="work">
 			<div class="container">
 				<header class="how-it-work__header row justify-content-center">
 					<h2>Как происходит сделка</h2>
 				</header>
 				<ul class="how-it-work__list">
-					<li class="how-it-work__item row">
-						<div class="how-it-work__wrapper col-xl-6">
+					<li class="how-it-work__item row wow bounceInLeft">
+						<div class="how-it-work__wrapper col-xl-5">
 								<span class="how-it-work__title">1. Вы отправляете заявку по форме ниже</span>
 								<p class="how-it-work__desc">Заполните все поля верно, чтобы мы смогли связаться с вами в ближайшее время.</p>
 						</div>
-						<div class="how-it-work__icon how-it-work__icon-first col-xl-6"></div>
+						<div class="how-it-work__icon how-it-work__icon-first col-xl-7"></div>
 					</li>
-					<li class="how-it-work__item row">
-						<div class="how-it-work__wrapper col-xl-6">
+					<li class="how-it-work__item row wow bounceInRight">
+						<div class="how-it-work__wrapper col-xl-6 order-2">
 								<span class="how-it-work__title">2. Мы свяжемся в вами</span>
 								<p class="how-it-work__desc">Обсудим детали обмена и ответим на все ваши вопросы.</p>
 						</div>
-						<div class="how-it-work__icon how-it-work__icon-second col-xl-6"></div>
+						<div class="how-it-work__icon how-it-work__icon-second col-xl-6 order-1"></div>
 					</li>
-					<li class="how-it-work__item row">
+					<li class="how-it-work__item row wow bounceInLeft">
 						<div class="how-it-work__wrapper col-xl-6">
 								<span class="how-it-work__title">3. После оплаты вы получаете игровую валюту</span>
 								<p class="how-it-work__desc">После подтверждения перевода вы сможете получить оплаченную сумму игровой валюты в назначеном месте.</p>
@@ -65,7 +75,7 @@
 		</section>
 		<section class="why-we">
 			<div class="container">
-				<header class="why-we row justify-content-center">
+				<header class="why-we__header row justify-content-center">
 					<h2>Почему стоит покупать у нас?</h2>
 				</header>
 				<ul class="why-we__list row justify-content-center">
@@ -80,36 +90,43 @@
 				</ul>
 			</div>
 		</section>
-		<section class="buy">
+		<section class="buy" id="buy">
 			<div class="container">
 				<header class="buy__header row justify-content-center">
 					<h2>Купить серебро</h2>
 				</header>
 				<div class="buy__wrapper row justify-content-center">
 					<form class="form row flex-column col-xl-6" action="">
-						<input type="text" name="name" id="name" class="input-text" placeholder="Ваше имя">
-						<input type="text" name="value" id="value" class="input-text" placeholder="Сумма серебра для покупки">
-						<input type="text" name="contact" id="contact" class="input-text" placeholder="Как с вами связаться: Вконтакте, Skype, Telegram, Discord">
-						<div class="form__pay-checkboxes row">
+						<input type="text" name="name" id="name" class="input-text" placeholder="Ваше имя" required>
+						<input type="text" name="value" id="value" class="input-text" placeholder="Сумма серебра для покупки" required>
+						<input type="text" name="contact" id="contact" class="input-text" placeholder="Как с вами связаться: Вконтакте, Skype, Telegram, Discord" required>
+						<div class="form__pay-checkboxes row align-items-center">
+							<span>Выберите способ оплаты</span>
 							<label class="col-xl-4">
 									<input type="checkbox" name="pay" id="yandex" value="Яндекс">
-									<img src="http://placehold.it/150x75" width="150" alt="yandex">
+									<div class="form__checked row justify-content-center align-items-center">
+										<img src="images/yandex.png" width="150" alt="yandex">
+									</div>
 							</label>
 							<label class="col-xl-4">
 									<input type="checkbox" name="pay" id="qiwi" value="Киви">
-									<img src="http://placehold.it/150x75" width="150" alt="qiwi">
+									<div class="form__checked row justify-content-center align-items-center">
+										<img src="images/qiwi.png" width="150" alt="qiwi">
+									</div>
 							</label>
 							<label class="col-xl-4">
 									<input type="checkbox" name="pay" id="webmoney" value="Вебмани">
-									<img src="http://placehold.it/150x75" width="150" alt="webmoney">
+									<div class="form__checked row justify-content-center align-items-center">
+										<img src="images/webmoney.png" width="150" alt="webmoney">
+									</div>
 							</label>
 						</div>
-						<button type="submit" class="btn btn__send">Отправить</button>
+						<button type="submit" class="btn btn--send">Отправить</button>
 					</form>
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
 				<header class="reviews__header row justify-content-center">
 					<h2>Отзывы</h2>
@@ -140,25 +157,42 @@
 					<div class="reviews__form col-xl-6">
 						<span class="reviews__form-title">Оставить отзыв</span>
 						<form class="form row flex-column" action="">
-							<input type="text" name="name" id="name" class="input-text" placeholder="Ваше имя">
-							<textarea class="textarea-text" name="message" id="message">Напишите свой отзыв здесь</textarea>
+							<input type="text" name="name" id="name" class="input-text" placeholder="Ваше имя" required>
+							<textarea class="textarea-text" name="message" id="message" placeholder="Напишите свой отзыв здесь" required></textarea>
 							<button type="submit" class="btn btn__send">Отправить</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<header class="contacts__header row justify-content-center">
 					<h2>Наши контакты</h2>
 				</header>
 				<ul class="contacts__list row align-items-center flex-column">
-					<li class="contacts__item contacts__item--icon-skype col-xl-4"><a href="skype:R2HazyBuy?chat" class="contacts__link">R2HazyBuy</a href="#"></li>
-					<li class="contacts__item contacts__item--icon-vk col-xl-4"><a href="https://vk.com/zsavich" class="contacts__link">/zsavich</a href="#"></li>
+					<li class="contacts__item contacts__item--icon-skype col-xl-2 row align-items-center">
+						<a href="skype:R2HazyBuy?chat" class="contacts__link">R2HazyBuy</a href="#">
+						</li>
+					<li class="contacts__item contacts__item--icon-vk col-xl-2 row align-items-center">
+						<a href="https://vk.com/zsavich" class="contacts__link">/zsavich</a>
+					</li>
 				</ul>
 			</div>
 		</section>
 	</main>
+	<script src="js/wow.min.js"></script>
+  <script>
+  	new WOW().init();
+  </script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+  $(window).load(function() {
+    setTimeout(function () { 
+      $(".loader").delay(100).fadeOut().remove();   
+    }, 500);  
+  });
+</script>
 </body>
 </html>
